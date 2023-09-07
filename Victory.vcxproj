@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c9e85fee-37dc-4c8b-9cc1-da107effd586}</ProjectGuid>
+    <RootNamespace>Victory</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\vanya\source\repos\Victory\SteamSDK;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\vanya\source\repos\Victory\SteamSDK\lib\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\vanya\source\repos\Victory\SteamSDK;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\vanya\source\repos\Victory\SteamSDK\lib\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CEntity.cpp" />
+    <ClCompile Include="console.cpp" />
+    <ClCompile Include="GlobalVars.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="Models.cpp" />
+    <ClCompile Include="OffsetManager.cpp" />
+    <ClCompile Include="ProcessMemory.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="SteamAPI.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Victory.cpp" />
+    <ClCompile Include="Visuals.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CEntity.h" />
+    <ClInclude Include="console.h" />
+    <ClInclude Include="GlobalVars.h" />
+    <ClInclude Include="Headers.h" />
+    <ClInclude Include="httplib.h" />
+    <ClInclude Include="json.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="Models.h" />
+    <ClInclude Include="OffsetManager.h" />
+    <ClInclude Include="ProcessMemory.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="server.h" />
+    <ClInclude Include="SteamAPI.h" />
+    <ClInclude Include="SteamSDK\isteamapplist.h" />
+    <ClInclude Include="SteamSDK\isteamapps.h" />
+    <ClInclude Include="SteamSDK\isteamappticket.h" />
+    <ClInclude Include="SteamSDK\isteamclient.h" />
+    <ClInclude Include="SteamSDK\isteamcontroller.h" />
+    <ClInclude Include="SteamSDK\isteamdualsense.h" />
+    <ClInclude Include="SteamSDK\isteamfriends.h" />
+    <ClInclude Include="SteamSDK\isteamgamecoordinator.h" />
+    <ClInclude Include="SteamSDK\isteamgameserver.h" />
+    <ClInclude Include="SteamSDK\isteamgameserverstats.h" />
+    <ClInclude Include="SteamSDK\isteamhtmlsurface.h" />
+    <ClInclude Include="SteamSDK\isteamhttp.h" />
+    <ClInclude Include="SteamSDK\isteaminput.h" />
+    <ClInclude Include="SteamSDK\isteaminventory.h" />
+    <ClInclude Include="SteamSDK\isteammatchmaking.h" />
+    <ClInclude Include="SteamSDK\isteammusic.h" />
+    <ClInclude Include="SteamSDK\isteammusicremote.h" />
+    <ClInclude Include="SteamSDK\isteamnetworking.h" />
+    <ClInclude Include="SteamSDK\isteamnetworkingmessages.h" />
+    <ClInclude Include="SteamSDK\isteamnetworkingsockets.h" />
+    <ClInclude Include="SteamSDK\isteamnetworkingutils.h" />
+    <ClInclude Include="SteamSDK\isteamparentalsettings.h" />
+    <ClInclude Include="SteamSDK\isteamps3overlayrenderer.h" />
+    <ClInclude Include="SteamSDK\isteamremoteplay.h" />
+    <ClInclude Include="SteamSDK\isteamremotestorage.h" />
+    <ClInclude Include="SteamSDK\isteamscreenshots.h" />
+    <ClInclude Include="SteamSDK\isteamugc.h" />
+    <ClInclude Include="SteamSDK\isteamuser.h" />
+    <ClInclude Include="SteamSDK\isteamuserstats.h" />
+    <ClInclude Include="SteamSDK\isteamutils.h" />
+    <ClInclude Include="SteamSDK\isteamvideo.h" />
+    <ClInclude Include="SteamSDK\matchmakingtypes.h" />
+    <ClInclude Include="SteamSDK\steamclientpublic.h" />
+    <ClInclude Include="SteamSDK\steamencryptedappticket.h" />
+    <ClInclude Include="SteamSDK\steamhttpenums.h" />
+    <ClInclude Include="SteamSDK\steamnetworkingfakeip.h" />
+    <ClInclude Include="SteamSDK\steamnetworkingtypes.h" />
+    <ClInclude Include="SteamSDK\steamps3params.h" />
+    <ClInclude Include="SteamSDK\steamtypes.h" />
+    <ClInclude Include="SteamSDK\steamuniverse.h" />
+    <ClInclude Include="SteamSDK\steam_api.h" />
+    <ClInclude Include="SteamSDK\steam_api_common.h" />
+    <ClInclude Include="SteamSDK\steam_api_flat.h" />
+    <ClInclude Include="SteamSDK\steam_api_internal.h" />
+    <ClInclude Include="SteamSDK\steam_gameserver.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Visuals.h" />
+    <ClInclude Include="xorstr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Victory.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SteamSDK\steam_api.json" />
+    <None Include="steam_api.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="steam_api.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Sounds\bameware.wav" />
+    <Media Include="Sounds\fatality.wav" />
+    <Media Include="Sounds\Pop.wav" />
+    <Media Include="Sounds\Punch.wav" />
+    <Media Include="Sounds\rifk7.wav" />
+    <Media Include="Sounds\skeet.wav" />
+    <Media Include="Sounds\Stapler.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

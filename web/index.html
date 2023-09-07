@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="https://openai-labs-public-images-prod.azureedge.net/user-TlgmG46SGO83I5Ybzv3zDaC8/generations/generation-rxf9qzVtdHovNSS5a5qJOR4a/image.webp" type="icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>VictoriaProject</title>
+</head>
+
+<body>  
+<div id="particles-js">
+  <div class="page">
+    <header class="page-header">
+      <div class="logotype">
+        <div class="logotype-text">
+          <p class="logotype-title">VictoriaProject</p>
+          <p class="logotype-subtitle">Free CS:GO cheat</p>
+        </div>
+      </div>
+      </header>
+      <main class="page-main">
+        <div class="main-navigation">
+          <nav>
+            <ul>
+              <li id="select-visuals"><i class="fa-regular fa-eye"></i> Visuals</li>
+              <li id="select-aimbot"><i class="fa-solid fa-crosshairs"></i> Aimbot</li>
+              <li id="select-trigger"><i class="fa-solid fa-gun"></i> Trigger</li>
+              <li id="select-misc"><i class="fa-solid fa-bars"></i> Misc</li>
+              <li id="select-configuration"><i class="fa-solid fa-gear"></i> Configuration</li>
+              <li id="select-binds"><i class="fa-solid fa-keyboard"></i> Binds</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="main-content">
+          <div class="features-tab-content">
+            <div id="tab-visuals" class="tabs-show-animation">
+              <div class="tab-body">
+                <div class="tab-text tab-text-header">Glow</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_glow">
+                    <label for="checkbox_glow" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Enemy</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_glow_enemy">
+                    <label for="checkbox_glow_enemy" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Color</div>
+                <div class="tab-button">
+                    <input type="color" id="glow_enemy_color">
+                </div>
+                </div>
+
+              <div class="tab-body">
+                  <div class="tab-text">Style</div>
+                  <div class="tab-button">
+                    <select id="select_enemy_glow_style">
+                      <option>Outline</option>
+                      <option>Pulse</option>
+                      <option>Solid</option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="tab-body">
+                <div class="tab-text">Friend</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_glow_friend">
+                    <label for="checkbox_glow_friend" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-body">
+                <div class="tab-text">Color</div>
+                <div class="tab-button">
+                    <input type="color" id="glow_friend_color" class="sub-input">
+                </div>
+                </div>
+
+                <div class="tab-body">
+                  <div class="tab-text">Style</div>
+                  <div class="tab-button">
+                    <select id="select_friend_glow_style">
+                      <option>Outline</option>
+                      <option>Pulse</option>
+                      <option>Solid</option>
+                    </select>
+                </div>
+              </div>
+                <div class="tab-body">
+                  <div class="tab-text">Health</div>
+                  <div class="tab-button">
+                    <div class="toggle-container">
+                      <input type="checkbox" class="toggle" id="checkbox_glowHealth">
+                      <label for="checkbox_glowHealth" class="label"><div class="ball"></div></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-text tab-text-header">Radar</div>
+                  <div class="tab-button">
+                    <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_radar">
+                    <label for="checkbox_radar" class="label"><div class="ball"></div></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-text tab-text-header">Chams</div>
+                  <div class="tab-button">
+                    <div class="toggle-container">
+                      <input type="checkbox" class="toggle" id="checkbox_chams">
+                      <label for="checkbox_chams" class="label"><div class="ball"></div></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-text">Enemy</div>
+                  <div class="tab-button">
+                    <div class="toggle-container">
+                      <input type="color" id="chams_enemy_color" class="sub-input">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-text">Friend</div>
+                  <div class="tab-button">
+                    <div class="toggle-container">
+                      <input type="color" id="chams_friend_color" class="sub-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-body">
+                  <div class="tab-text tab-text-header">Map color</div>
+                  <div class="tab-button">
+                    <div class="toggle-container">
+                      <input type="color" id="map_color" class="sub-input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-body">
+                  <div class="tab-text">Dark map colors (RGB wheel shows incorrect colors)</div>
+                  <div class="tab-button">
+                    <div class="toggle-container">
+                      <input type="checkbox" class="toggle" id="checkbox_darkmap">
+                      <label for="checkbox_darkmap" class="label"><div class="ball"></div></label>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+
+            <div id="tab-aimbot">
+              <div class="tab-body">
+                <div class="tab-text tab-text-header">Aimbot</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="is_aimbot_enabled">
+                    <label for="is_aimbot_enabled" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-trigger">
+              <div class="tab-body">
+                <div class="tab-text tab-text-header">Trigger</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="is_trigger_enabled">
+                    <label for="is_trigger_enabled" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-misc">
+              <div class="tab-body">
+                <div class="tab-text tab-text-header">Misc</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="is_misc_enabled">
+                    <label for="is_misc_enabled" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Bhop</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_bhop">
+                    <label for="checkbox_bhop" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Granade preview</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_gpreview">
+                    <label for="checkbox_gpreview" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Player FOV</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="range" min="0" max="170" value="0" class="slider" id="player_fov_range">
+                  </div>
+                  <center><span id="player_fov_slider_output"></span></center>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text tab-text-header">Viewmodel</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_viewmodel">
+                    <label for="checkbox_viewmodel" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Viewmodel FOV</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                      <input type="range" min="0" max="180" value="60" class="slider" id="player_viewmodel_fov">
+                  </div>
+                  <center><span id="player_viewmodel_fov_output"></span></center>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Viewmodel (X)</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="range" min="-20" max="20" value="0" class="slider" id="player_viewmodel_x">
+                  </div>
+                  <center><span id="player_viewmodel_x_output"></span></center>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Viewmodel (Y)</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="range" min="-20" max="20" value="0" class="slider" id="player_viewmodel_y">
+                  </div>
+                  <center><span id="player_viewmodel_y_output"></span></center>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Viewmodel (Z)</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="range" min="-20" max="20" value="0" class="slider" id="player_viewmodel_z">
+                  </div>
+                  <center><span id="player_viewmodel_z_output"></span></center>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text tab-text-header">Recoil crosshair</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_recoil_crosshair">
+                    <label for="checkbox_recoil_crosshair" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Force sniper crosshair</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_force_sniper_crosshair">
+                    <label for="checkbox_force_sniper_crosshair" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Show weapon accuracy</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_weapon_debug_accuracy">
+                    <label for="checkbox_weapon_debug_accuracy" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text tab-text-header">Hitsound</div>
+                <div class="tab-button">
+                  <div class="toggle-container">
+                    <input type="checkbox" class="toggle" id="checkbox_hitsound">
+                    <label for="checkbox_hitsound" class="label"><div class="ball"></div></label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-body">
+                <div class="tab-text">Sound</div>
+                <div class="tab-button">
+                  <select id="select_hitsound_sound">
+                    <option>Bameware</option>
+                    <option>Fatality</option>
+                    <option>Pop</option>
+                    <option>Punch</option>
+                    <option>Rifk7</option>
+                    <option>Skeet</option>
+                    <option>Stapler</option>
+                  </select>
+              </div>
+            </div>
+            <div class="tab-body">
+              <div class="tab-text tab-text-header">Knife <span style="color: #FF2D2D">(FPS Drops!)</span></div>
+              <div class="tab-button">
+                <div class="toggle-container">
+                  <input type="checkbox" class="toggle" id="checkbox_models_knife">
+                  <label for="checkbox_models_knife" class="label"><div class="ball"></div></label>
+                </div>
+              </div>
+            </div>
+            <div class="tab-body">
+              <div class="tab-text">Model</div>
+              <div class="tab-button">
+                <select id="select_knife_model">
+                  <option>M9 Bayonet</option>
+                  <option>Karambit</option>
+                  <option>Flip</option>
+                  <option>Flip Ghost</option>
+                  <option>Gut</option>
+                </select>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </main>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="footer-elements">
+    <div class="footer-links-container">
+      <div class="footer-link"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyRD-ayDyEtcksN5uSHt3gXebVIfMoRL4MZg&usqp=CAU"><span><a href="https://yougame.biz/members/54042/" target="blank">YouGame</a></span></div>
+      <div class="footer-link"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkvPm2eWwedHRIHqkci_3wnsTPZuorH_BrwA&usqp=CAU"><span><a href="https://www.unknowncheats.me/forum/members/3124361.html" target="blank">UC</a></span></div>
+      <div class="footer-link"><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png"><span><a href="https://discord.gg/E3BtpRN" target="blank">Discord</a></span></div>
+      <div class="footer-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"><span><a href="https://github.com/Saivior1337" target="blank">Github</a></span></div>
+    </div>
+    <div class="footer-button">
+      <button type="submit" id="apply_button"><i class="fa-solid fa-check"></i> Apply</button>
+    </div>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/25d6b5720b.js" crossorigin="anonymous"></script>
+<script>
+    let isReloaded = localStorage.getItem('isReloaded');
+    if (isReloaded == 'false')
+    {
+      localStorage.setItem('isReloaded', 'true');
+      location.reload();
+    }
+</script>
+</body>
+<script src="/script.js"></script>
+<script src="https://vincentgarreau.com/particles.js/assets/_build/js/lib/particles.js"></script>
+<script src="/app.js"></script>
+</html>

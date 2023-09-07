@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Interfaces">
+      <UniqueIdentifier>{73535c42-d511-47a6-8097-6072275ee9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Global">
+      <UniqueIdentifier>{f799a65c-00c4-4167-ba3a-bc1319121320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Memory">
+      <UniqueIdentifier>{ad14cb72-b18d-4030-959f-4f1f321e5bc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\SteamSDK">
+      <UniqueIdentifier>{41f10d04-2cf4-464c-9a30-a0ba450e9984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Web">
+      <UniqueIdentifier>{b2226b8f-3cdb-49f4-b5d0-7c1b9a724a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Features">
+      <UniqueIdentifier>{6af94c6b-677b-4f2e-a1b9-ff23e5580384}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Victory.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="console.cpp">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalVars.cpp">
+      <Filter>Исходные файлы\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamAPI.cpp">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>Исходные файлы\Web</Filter>
+    </ClCompile>
+    <ClCompile Include="OffsetManager.cpp">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>Исходные файлы\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="CEntity.cpp">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessMemory.cpp">
+      <Filter>Исходные файлы\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Visuals.cpp">
+      <Filter>Исходные файлы\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Models.cpp">
+      <Filter>Исходные файлы\Features</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="console.h">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVars.h">
+      <Filter>Исходные файлы\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers.h">
+      <Filter>Исходные файлы\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.h">
+      <Filter>Исходные файлы\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessMemory.h">
+      <Filter>Исходные файлы\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamapplist.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamapps.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamappticket.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamclient.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamcontroller.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamdualsense.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamfriends.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamgamecoordinator.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamgameserver.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamgameserverstats.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamhtmlsurface.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamhttp.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteaminput.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteaminventory.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteammatchmaking.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteammusic.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteammusicremote.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamnetworking.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamnetworkingmessages.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamnetworkingsockets.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamnetworkingutils.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamparentalsettings.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamps3overlayrenderer.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamremoteplay.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamremotestorage.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamscreenshots.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamugc.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamuser.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamuserstats.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamutils.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\isteamvideo.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\matchmakingtypes.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steam_api.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steam_api_common.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steam_api_flat.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steam_api_internal.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steam_gameserver.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steamclientpublic.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steamencryptedappticket.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steamhttpenums.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steamnetworkingfakeip.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steamnetworkingtypes.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steamps3params.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steamtypes.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamSDK\steamuniverse.h">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamAPI.h">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="json.h">
+      <Filter>Исходные файлы\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="httplib.h">
+      <Filter>Исходные файлы\Web</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>Исходные файлы\Web</Filter>
+    </ClInclude>
+    <ClInclude Include="OffsetManager.h">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>Исходные файлы\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="CEntity.h">
+      <Filter>Исходные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Visuals.h">
+      <Filter>Исходные файлы\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Models.h">
+      <Filter>Исходные файлы\Features</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Victory.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SteamSDK\steam_api.json">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </None>
+    <None Include="steam_api.dll">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="steam_api.lib">
+      <Filter>Исходные файлы\SteamSDK</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Sounds\bameware.wav">
+      <Filter>Файлы ресурсов</Filter>
+    </Media>
+    <Media Include="Sounds\fatality.wav">
+      <Filter>Файлы ресурсов</Filter>
+    </Media>
+    <Media Include="Sounds\Pop.wav">
+      <Filter>Файлы ресурсов</Filter>
+    </Media>
+    <Media Include="Sounds\Punch.wav">
+      <Filter>Файлы ресурсов</Filter>
+    </Media>
+    <Media Include="Sounds\rifk7.wav">
+      <Filter>Файлы ресурсов</Filter>
+    </Media>
+    <Media Include="Sounds\skeet.wav">
+      <Filter>Файлы ресурсов</Filter>
+    </Media>
+    <Media Include="Sounds\Stapler.wav">
+      <Filter>Файлы ресурсов</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
